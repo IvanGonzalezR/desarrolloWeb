@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8"/> <!--Para que acepte acentos-->
     <title>Ivan Gonzalez</title>
-    <link rel="icon" type="image/png" href="images/icono.png">
-    <link rel="stylesheet" href="css/estilos.css">
+    <!--Imagen del title-->
+    <link rel="icon" type="image/png" href="images/icono.png"/>
+    <link rel="stylesheet" href="css/estilos.css"/>
   </head>
+  <!--Comienza el Cuerpo del sitio Web-->
   <body>
+    <!--Comienza la cabecera del sitio Web-->
     <header class="header">
       <div>
+        <!--Figure puede encerrar imagenes, graficos etc. 
+        independientemente del flujo del documento,
+        normalmente utilizado para poner imagenes 
+        al lado de cierto texto        -->
         <figure class="logo">
+          <!--Logo principal en el Header de la pagina-->
           <img src="images/icono.png" alt="Logo de KikeG"/> 
         </figure>
+      <!--Menu de navegacion-->
       <nav class="menu">
         <ol>
           <li>
@@ -19,21 +28,24 @@
           </li>
           <li>
             <a class="link" href="#educacion">Educacion</a>
-          </li>
+          </li> 
           <li>
             <a class="link" href="#contacto">Contacto</a>
           </li>
         </ol>
       </nav>
+      <!--Termina menu de navegacion-->
     </div>
     </header>
+    <!--Termina la cabecera del sitio Web-->
     <section class="hero">
       <h1>
-        Hola! Soy <strong> Gonzalez</strong>,<br> Estudiante <strong>universitario</strong> <br> 
+        Hola! Soy <strong>Iván Gonzalez</strong>,<br> Estudiante <strong>universitario</strong> <br> 
         con un largo camino por recorrer
       </h1>
       <img src="images/hero.jpg" width="500" alt="Imagen de IvanG"/>  
     </section>
+
     <section id="portafolio" class="portfolio">
       <h2>Portafolio(Proyectos Recientes)</h2>
       <article class="project">
@@ -50,6 +62,7 @@
         </figure>
       </article>
     </section>
+
     <section id="educacion" class="education">
       <h2>Más sobre mi Educación</h2>
       <article class="education1Article">
@@ -61,6 +74,7 @@
         <a class="education1-url" href="https://es-la.facebook.com/kinder.sorjuanainesdelacruz.73" target="_blank">Visitar pag. de Facebook</a>
       </article>
     </section>
+
     <section id="contacto" class="contact">
       <form action="/subscripcion" class="form-email" >
         <h3>Email</h3>
@@ -68,6 +82,7 @@
         <input type="submit" value="Enviar"/>
       </form>
     </section>
+    
     <footer class="footer">footer</footer>
   </body>
 
