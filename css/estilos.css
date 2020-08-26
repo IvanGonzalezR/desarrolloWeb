@@ -44,6 +44,33 @@ h1 strong
     font-style: italic;
 }
 
+h2
+{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.project-photoshop,
+.project-date,
+.project-url
+{
+    margin: 10px 0;
+}
+
+.project-description
+{
+    font-size: 20px;
+}
+
+.project strong
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+
 .logo
 {
     display: flex;
@@ -130,6 +157,7 @@ body header nav ol li:nth-child(3) a
 .portfolio
 {
     background: #F6F6F6;
+    padding: 20px;
 }
 
 .project 
@@ -142,7 +170,17 @@ body header nav ol li:nth-child(3) a
     margin-bottom: 15px;
     margin: 10px;
     padding: 20px;
-    background: ##f0f2f5;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .project-details
@@ -157,6 +195,75 @@ body header nav ol li:nth-child(3) a
     width: 500px;
 }
 
+.education1Article
+{
+    margin: 10px; 
+    border-radius: 10px;
+    width: 480px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #e9fbfd;
+}
+
+/* .education1Article img
+{
+    width: 480px;
+    /* object-fit: fill; */
+/* } */
+
+.education1-imageContainer
+{
+    margin-left: 0;
+    margin-top: 0;
+    width: inherit;
+    height: 200px;
+   
+}
+
+.education1-image
+{
+    margin: 0;
+    /* border-radius: 10px; */
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.education-detail
+{
+    margin: 20px 40px;
+    background-color: white;
+    margin-top: -45px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.education1-description
+{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.education1-url
+{
+    color: #296fff;
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.education-list
+{
+    display: flex;
+}
+
+.education-list-title
+{
+    margin-left: 20px;
+}
+
 .footer
 {
     color: white;
@@ -164,6 +271,7 @@ body header nav ol li:nth-child(3) a
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .footer img
