@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8"/> <!--Para que acepte acentos-->
-    <title>Ivan Gonzalez</title>
+    <title>Iv&aacute;n Gonzalez</title>
     <!--Imagen del title-->
     <link rel="icon" type="image/png" href="https://i.imgur.com/NzUAQRU.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -11,6 +11,7 @@
   <!--Comienza el Cuerpo del sitio Web-->
   <body>
     <!--Comienza la cabecera del sitio Web-->
+    <div class="container">
     <header class="header">
         <!--Figure puede encerrar imagenes, graficos etc. 
         independientemente del flujo del documento,
@@ -21,7 +22,7 @@
           <img src="./images/icono.png" alt="Logo de KikeG" height="55px"/> 
         </figure>
       <!--Menu de navegacion-->
-      <nav class="menu">
+      <nav class="menu">    
         <ol>
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
@@ -34,132 +35,144 @@
           </li>
         </ol>
       </nav>
+      </div>
 <!--Termina menu de navegacion-->
     </header>
     <!--Termina la cabecera del sitio Web-->
+    <div class="container">
     <section class="hero">
-      <h1>
-        Hola! Soy <strong class="nombre">Iván Gonzalez</strong>,
-        <br> Estudiante <span class="universitario"><strong>universitario</strong></span> <br> 
-        con un largo camino por recorrer
-      </h1>
+        <h1>
+          Hola! Soy <strong class="nombre">Iv&aacute;n Gonzalez</strong>,
+          <br> Estudiante <span class="universitario"><strong>universitario</strong></span> <br> 
+          con un largo camino por recorrer
+        </h1>
+        <img class="hero-image" src="https://i.imgur.com/sVRBz63.jpg" alt="hero" width="450" height="300">
+      </div>
     </section>
 
+    <div class="container">
     <section id="portafolio" class="portfolio">
-      <h2>Portafolio(Proyectos Recientes)</h2>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Avatar Icons</h3>
-          <h6 class="project-photoshop">Photoshop</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 09/07/2020</small></p>
-          <p class="project-url"><strong>Disponible para visualización:</strong> Pronto...</p>
-          <p class="project-description">Avatar Icons, fue el proyecto destinado a la creación de iconos con la herramienta <strong>photoshop</strong>  
-            realizado por mi a partir de diversas imagenes recibidas en formato jpg para su postproducción, formando
-            parte de un proyecto más grande como lo es el desarrollo de un videojuego.  
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="https://i.imgur.com/trYSb9m.png" alt="Avatar Icons" width="450"/>
-        </figure>
-      </article>
-      <article class="project">
-        <div class="project-details">
-          <h3 class="project-title">Avatar Icons</h3>
-          <h6 class="project-photoshop">Photoshop</h6>
-          <p class="project-date"><small><strong>Fecha:</strong> 09/07/2020</small></p>
-          <p class="project-url"><strong>Disponible para visualización:</strong> Pronto...</p>
-          <p class="project-description">Avatar Icons, fue el proyecto destinado a la creación de iconos con la herramienta <strong>photoshop</strong>  
-            realizado por mi a partir de diversas imagenes recibidas en formato jpg para su postproducción, formando
-            parte de un proyecto más grande como lo es el desarrollo de un videojuego.  
-          </p>
-        </div>
-        <figure class="project-imageContainer">
-          <img class="project-image" src="https://i.imgur.com/trYSb9m.png" alt="Avatar Icons" width="450"/>
-        </figure>
-      </article>
+        <h2 class="portfolio-title">Portafolio(Proyectos Recientes)</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Avatar Icons</h3>
+            <h6 class="project-photoshop">Photoshop</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 09/07/2020</small></p>
+            <p class="project-url"><strong>Disponible para visualizaci&oacute;n:</strong> Pronto...</p>
+            <p class="project-description">Avatar Icons, fue el proyecto destinado a la creaci&oacute;n de iconos con la herramienta <strong>photoshop</strong>  
+              realizado por mi a partir de diversas imagenes recibidas en formato jpg para su postproducci&oacute;n, formando
+              parte de un proyecto m&aacute;s grande como lo es el desarrollo de un videojuego.  
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" src="https://i.imgur.com/trYSb9m.png" alt="Avatar Icons" width="450"/>
+          </figure>
+        </article>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Avatar Icons</h3>
+            <h6 class="project-photoshop">Photoshop</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 09/07/2020</small></p>
+            <p class="project-url"><strong>Disponible para visualizaci&oacute;n:</strong> Pronto...</p>
+            <p class="project-description">Avatar Icons, fue el proyecto destinado a la creaci&oacute;n de iconos con la herramienta <strong>photoshop</strong>  
+              realizado por mi a partir de diversas imagenes recibidas en formato jpg para su postproducci&oacute;n, formando
+              parte de un proyecto más grande como lo es el desarrollo de un videojuego.  
+            </p>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" src="https://i.imgur.com/trYSb9m.png" alt="Avatar Icons" width="450"/>
+          </figure>
+        </article>
+      </div>
     </section>
 <!-- Comienza seccion "EDUCACION" -->
-<h2 class="education-list-title">Más sobre mi Educación</h2>
-    <section id="educacion" class="education-list">
-      <article class="education1Article">
-        <figure class="education1-imageContainer">
-          <img class="education1-image" src="https://i.imgur.com/41kpRte.jpg" alt="SorJuanaInes"/>
-        </figure>
-        <div class="education-detail">
-          <h3 class="education1-title">Jardín de niños <br> Sor Juana Inés de la Cruz</h3>
-          <p class="education1-description">El primer paso en mi educación,
-             destinada a encaminarme por el camino del conocimiento y la verdad
-              de este mundo.</p>
-          <a class="education1-url" href="https://es-la.facebook.com/kinder.sorjuanainesdelacruz.73"
-           target="_blank">Visitar pag. de Facebook</a>
-        </div>
-      </article>
-      <article class="education1Article">
-        <figure class="education1-imageContainer">
-          <img class="education1-image" src="https://i.imgur.com/CNtIk4N.jpg" alt="SorJuanaInes"/>
-        </figure>
-        <div class="education-detail">
-          <h3 class="education1-title">Escuela primaria <br> José Revueltas</h3>
-          <p class="education1-description">Una de las primarias en las que estuve, siendo ésta
-            la mejor, ayudandome a seguir impulsándome en el camino de la educación.
-          </p>
-          <a class="education1-url" href="https://www.facebook.com/jose.revueltas.3910"
-           target="_blank">Visitar pag. de Facebook</a>
-        </div>
-      </article>
-      <article class="education1Article">
-        <figure class="education1-imageContainer">
-          <img class="education1-image" src="https://i.imgur.com/gJFHyao.jpg" alt="SorJuanaInes"/>
-        </figure>
-        <div class="education-detail">
-          <h3 class="education1-title">Escuela preparatoria <br> CBTIS4</h3>
-          <p class="education1-description">La mejor preparatoria de la Laguna, donde forjé bases sólidas
-            que eventualmente me serían de utilidad en mi carrera profesional.
-          </p>
-          <a class="education1-url" href="https://www.facebook.com/cbtis4oficial"
-           target="_blank">Visitar pag. de Facebook</a>
-        </div>
-      </article>
-      <article class="education1Article">
-        <figure class="education1-imageContainer">
-          <img class="education1-image" src="https://i.imgur.com/HW9AVjH.jpg" alt="SorJuanaInes"/>
-        </figure>
-        <div class="education-detail">
-          <h3 class="education1-title">Universidad <br> Instituto Tecnológico de la Laguna (actual)</h3>
-          <p class="education1-description">La desición de mi vida, la hora de la verdad.
-            Actualmente curso la Ing. en Sistemas computacionales y es por eso que estoy
-             en proceso <br>de aprender a crear Aplicaciones WEB 
-          </p>
-          <a class="education1-url" href="https://www.facebook.com/teclaguna"
-           target="_blank">Visitar pag. de Facebook</a>
-        </div>
-      </article>
-    </section>
+  <div class="container">
+    <h2 class="education-list-title">M&aacute;s sobre mi Educaci&oacute;n</h2>
+      <section id="educacion" class="education-list">
+        <article class="education1Article">
+          <figure class="education1-imageContainer">
+            <img class="education1-image" src="https://i.imgur.com/41kpRte.jpg" alt="SorJuanaInes"/>
+          </figure>
+          <div class="education-detail">
+            <h3 class="education1-title">Jardín de niños <br> Sor Juana Inés de la Cruz</h3>
+            <p class="education1-description">El primer paso en mi educación,
+               destinada a encaminarme por el camino del conocimiento y la verdad
+                de este mundo.</p>
+            <a class="education1-url" href="https://es-la.facebook.com/kinder.sorjuanainesdelacruz.73"
+             target="_blank">Visitar pag. de Facebook</a>
+          </div>
+        </article>
+        <article class="education1Article">
+          <figure class="education1-imageContainer">
+            <img class="education1-image" src="https://i.imgur.com/CNtIk4N.jpg" alt="SorJuanaInes"/>
+          </figure>
+          <div class="education-detail">
+            <h3 class="education1-title">Escuela primaria <br> José Revueltas</h3>
+            <p class="education1-description">Una de las primarias en las que estuve, siendo ésta
+              la mejor, ayudandome a seguir impulsándome en el camino de la educación.
+            </p>
+            <a class="education1-url" href="https://www.facebook.com/jose.revueltas.3910"
+             target="_blank">Visitar pag. de Facebook</a>
+          </div>
+        </article>
+        <article class="education1Article">
+          <figure class="education1-imageContainer">
+            <img class="education1-image" src="https://i.imgur.com/gJFHyao.jpg" alt="SorJuanaInes"/>
+          </figure>
+          <div class="education-detail">
+            <h3 class="education1-title">Escuela preparatoria <br> CBTIS4</h3>
+            <p class="education1-description">La mejor preparatoria de la Laguna, donde forjé bases sólidas
+              que eventualmente me serían de utilidad en mi carrera profesional.
+            </p>
+            <a class="education1-url" href="https://www.facebook.com/cbtis4oficial"
+             target="_blank">Visitar pag. de Facebook</a>
+          </div>
+        </article>
+        <article class="education1Article">
+          <figure class="education1-imageContainer">
+            <img class="education1-image" src="https://i.imgur.com/HW9AVjH.jpg" alt="SorJuanaInes"/>
+          </figure>
+          <div class="education-detail">
+            <h3 class="education1-title">Universidad <br> Instituto Tecnológico de la Laguna (actual)</h3>
+            <p class="education1-description">La desición de mi vida, la hora de la verdad.
+              Actualmente curso la Ing. en Sistemas computacionales y es por eso que estoy
+               en proceso de aprender a crear Aplicaciones WEB 
+            </p>
+            <a class="education1-url" href="https://www.facebook.com/teclaguna"
+             target="_blank">Visitar pag. de Facebook</a>
+          </div>
+        </article>
+      </section>
+  </div>
 
-    <section id="contacto" class="contact">
-      <form action="/subscripcion" class="form-email" >
-        <h3>Mándame tu Email</h3>
-        <input type="datetime" placeholder="Escribe tu e-mail" required/>
-        <input type="submit" value="Enviar"/>
-      </form>
-      <div class="social">
-        <a href="https://twitter.com/kikingonzalez4" class="social-link twitter" target="_blank"></a>
-        <a href="https://www.facebook.com/KikeGlzRuiz" class="social-link facebook" target="_blank"></a>
-        <a href="https://github.com/IvanGonzalezR" class="social-link github" target="_blank"></a>
-        <a href="https://www.instagram.com/kikegr2000/?hl=es-la" class="social-link instagram" target="_blank"></a>
+  <div class="container">
+  <section id="contacto" class="contact">
+        <form action="/subscripcion" class="form-email" >
+          <h3>M&aacute;ndame tu Email</h3>
+          <input type="datetime" placeholder="Escribe tu e-mail" required/>
+          <input type="submit" value="Enviar"/>
+        </form>
+        <div class="social">
+          <a href="https://twitter.com/kikingonzalez4" class="social-link twitter" target="_blank"></a>
+          <a href="https://www.facebook.com/KikeGlzRuiz" class="social-link facebook" target="_blank"></a>
+          <a href="https://github.com/IvanGonzalezR" class="social-link github" target="_blank"></a>
+          <a href="https://www.instagram.com/kikegr2000/?hl=es-la" class="social-link instagram" target="_blank"></a>
+        </div>
       </div>
     </section>
     
+    <div class="container">
     <footer class="footer">
-      <div>
-        <p>Realizado para el curso de 
-          Desarrollo Web de Platzi
-          <img src="./images/platzi.png" alt="Platzi">
-        </p>
-      </div>
-      <div>
-        <p>Designed with <\3 by: <a href="https://twitter.com/thespianartist" target="_blank" width="80px">@thespianartist</a>
-         </p>
+        <div>
+          <p>Realizado para el curso de 
+            Desarrollo Web de Platzi  &nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="./images/platzi.png" alt="Platzi" height="80px" >
+          </p>
+        </div>
+        <div>
+          <p>Designed with <\3 by: <a href="https://twitter.com/thespianartist" target="_blank" width="80px">@thespianartist</a>
+           </p>
+        </div>
       </div>
     </footer>
   </body>
