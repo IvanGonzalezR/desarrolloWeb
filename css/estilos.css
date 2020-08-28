@@ -264,6 +264,88 @@ body header nav ol li:nth-child(3) a
     margin-left: 20px;
 }
 
+#educacion article:nth-child(2)
+{
+    order: 1 ;
+}
+
+.contact
+{
+    background-color: #004372;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.social
+{
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link
+{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter
+{
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook
+{
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.github
+{
+    background-image: url('../images/github.svg');
+}
+
+.social-link.instagram
+{
+    background-image: url('../images/instagram.svg');
+}
+
+.form-email input
+{
+    border-color: gray;
+    padding: 8px 20px 8px 30px;
+    background-image: url('../images/envelope.svg');
+    background-size: 20px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.form-email h3
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#contacto  form  input[type=submit]:nth-child(3)
+{
+    display: block;
+    margin: 10px 0 10px 0;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    background-image: none;
+    justify-content: center;
+    padding: 8px 30px 8px 30px;
+}
+
 .footer
 {
     color: white;
@@ -271,7 +353,9 @@ body header nav ol li:nth-child(3) a
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0 50px 0;
+    height: 110px;
+    white-space: nowrap;
 }
 
 .footer img
