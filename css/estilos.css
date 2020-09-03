@@ -10,7 +10,7 @@ body
 {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    background: #001E34;
+    /* background: #001E34; */
 }
 
 h1,h2,h3,h4,h5,h6
@@ -177,7 +177,7 @@ body header nav ol li:nth-child(3) a
 
 article.project
 {
-    box-shadow: 3px 5px 10px #888888;
+    /* box-shadow: 3px 5px 10px #888888; */
 }
 
 .project 
@@ -223,7 +223,7 @@ article.project
     overflow: hidden;
     flex-shrink: 0;
     background: #e9fbfd;
-    box-shadow: 3px 5px 10px #888888;
+    /* box-shadow: 3px 5px 10px #888888; */
 }
 
 /* .education1Article img
@@ -405,5 +405,5 @@ article.project
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
-    background: #F8F8F8;
+    /* background: #F8F8F8; */
 }
