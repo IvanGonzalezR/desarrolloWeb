@@ -5,6 +5,37 @@ Azul claro = #0396FF
 Verde obscuro = #007B43
 Verde Neutro #0ee243 
 Azul obscuro #001E34*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?sul775');
+    src:  url('../fonts/icomoon.eot?sul775#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?sul775') format('truetype'),
+      url('../fonts/icomoon.woff?sul775') format('woff'),
+      url('../fonts/icomoon.svg?sul775#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+  
 
 body
 {
@@ -53,21 +84,8 @@ h2
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
+    margin-right: 0;
 }
-
-body header div nav ol li:nth-child(3) a
-{
-     margin-right: 25px;
-}
-
-/* figure
-{
-    margin-block-end: 0;
-    margin-inline-end: 0;
-    margin-inline-start: 0;
-    margin-block-start: 0;
-    
-} */
 
 .project-photoshop,
 .project-date,
@@ -134,7 +152,7 @@ body header div
     height: 70px;
     align-items: center;
     flex-wrap: wrap;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 10;
 }
@@ -177,7 +195,7 @@ body header div
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .hero-image
@@ -193,7 +211,7 @@ body header div
 
 .portfolio-title
 {
-    margin: 10px 20px 30px 0px;
+    margin: 10px 0px 30px 0px;
     width: inherit;
     text-align: center;
 }
@@ -414,7 +432,8 @@ body header div
 .footer div p
 {
     margin-bottom: 0;
-    text-overflow: clip;
+    /* text-overflow: clip; */
+    text-align: center;
 }
 
 .container 
@@ -430,11 +449,49 @@ body header div
     /* background: #F8F8F8; */
     position: relative;
 }
+.html-video
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.youtube-video
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
 /* DESKTOP FIRST, DEL MAS ALTO AL MAS BAJO */
 
 @media screen and (max-width: 1024px)
 {
+    .hero
+    {
+        height: auto;
+        /* padding: 2em; */
+        position: relative;
+        overflow: hidden;
+
+    }
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+    }
+    h1 
+    {
+        font-size: 2em;
+        z-index: 2;
+        /* padding-left: 1em; */
+        margin: 1em;
+        text-shadow: 1px 2px 2px #000;
+    }
     .container
     {
         padding: 0 1em;
@@ -452,14 +509,12 @@ body header div
         text-align: center; 
         padding: 1em;
     }
-    .footer p 
-    {
-        /* text-align: center; */
-    }
+
 }
 
 @media screen and (max-width: 767px)
 {
+   
     body header div nav ol li:nth-child(3) a
     {
         margin-right: 0;
@@ -559,15 +614,16 @@ body header div
     .form-email h3 
     {
         margin-top: 0;
-    }
-    .footer
-    {
-              
+        overflow: hidden;
     }
 }
 
-@media screen and (max-width: 479px)
+@media screen and (max-width: 480px)
 {
+    h1 
+    {
+        font-size: 1.5em;
+    }
     .project-details
     {
         width: auto;
@@ -578,10 +634,31 @@ body header div
         margin: -2em .5em .5em;
         padding: 1em;
     }
-    
+    .footer
+    {
+        overflow: hidden;
+    }
+    .footer p 
+    {
+        width: auto;
+        text-overflow: initial;    
+    }
+    body div footer div
+    {
+        font-size: .8em;
+    }
 }
 
 @media screen and (max-width: 320px)
 {
- 
+    h1 
+    {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .hero
+    {
+        padding: 2em 0;
+    }
+    
 }
