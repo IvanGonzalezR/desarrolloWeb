@@ -11,7 +11,7 @@
   </head>
   <!--Comienza el Cuerpo del sitio Web-->
   <body>
-    <i class="icon-menu"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <!--Comienza la cabecera del sitio Web-->
     <div class="full-wrapper">
     <header class="header">
@@ -27,8 +27,8 @@
           </div>
         </figure>
       <!--Menu de navegacion-->
-      <nav class="menu">
-        <ol>
+      <nav class="menu ">
+        <ol id="header-links">
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
           </li>
@@ -94,12 +94,12 @@
 
     <!-- <video class="html-video" src="/video/msdos.mkv" width="1280" height="720" controls>
     </video> -->
-    <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dx9gQRCT_kM" frameborder="0"
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dx9gQRCT_kM" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 <!-- Comienza seccion "EDUCACION" -->
-   <div class="container"> 
-    <h2 class="education-list-title">M&aacute;s sobre mi Educaci&oacute;n</h2>
+<div class="container" id="educacionContainer"> 
+<h2 class="education-list-title">M&aacute;s sobre mi Educaci&oacute;n</h2>
       <section id="educacion" class="education-list">
         <article class="education1Article">
           <figure class="education1-imageContainer">
@@ -186,5 +186,39 @@
       </div>
     </footer>  
   </div>
+  <script>
+    //console.log(window.matchMedia('screen and (max-width: 767px)'));
+    const ipad = window.matchMedia('screen and (max-width: 767px)');
+    const menu = document.querySelector('.menu');
+    const burguerButton = document.querySelector('#burger-menu');
+    const headerLinks = document.querySelector('#header-links');
+
+    // if (ipad.matches) {
+    //     burguerButton.addEventListener('click', hideShow); 
+    //     headerLinks.addEventListener('click', hideShow);
+    // }
+
+    ipad.addListener(validation);
+
+    function validation(event){
+      if (event.matches) {
+        burguerButton.addEventListener('click', hideShow); 
+        headerLinks.addEventListener('click', hideShow);
+      }else{
+        burguerButton.removeEventListener('click', hideShow); 
+        headerLinks.removeEventListener('click', hideShow);
+      }
+    }
+    validation(ipad);
+
+    function hideShow(){
+      if (menu.classList.contains('is-active')) {
+        menu.classList.remove('is-active');
+      }else{
+        menu.classList.add('is-active');
+      }
+    }
+
+  </script>
   </body>
 </html>
